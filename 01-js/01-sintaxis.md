@@ -376,7 +376,7 @@ También hay otros valores especiales relacionados con operaciones con números:
 ### _Casting_ de variables
 Como hemos dicho las variables pueden contener cualquier tipo de valor y, en las operaciones, Javascript realiza **automáticamente** las conversiones necesarias para, si es posible, realizar la operación. Por ejemplo:
 * `'4' / 2` devuelve 2 (convierte '4' en 4 y realiza la operación)
-* `'23' - null` devuelve 0 (hace 23 - 0)
+* `'23' - null` devuelve 23 (hace 23 - 0)
 * `'23' - undefined` devuelve _NaN_ (no puede convertir undefined a nada así que no puede hacer la operación)
 * `'23' * true` devuelve 23 (23 * 1)
 * `'23' * 'Hello'` devuelve _NaN_ (no puede convertir 'Hello')
