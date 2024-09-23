@@ -6,6 +6,9 @@ En primer lugar veremos una introducción al [desarrollo web y las arquitecturas
 1. **[Javascript](01-js)**: aquí aprenderemos a programar con el lenguaje Javascipt
 2. **[Vue](02-vue)**: en este bloque usaremos el framework Javascript **Vue JS**
 
+## Ejercicios
+Accede a los [ejercicios y retos](./ejercicios.md) propuestos del módulo DWEC.
+
 En la página del [entorno de trabajo](entorno.md) se explican las herramientas que necesitaremos para trabajar en este módulo.
 
 ## Licencia

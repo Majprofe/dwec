@@ -18,22 +18,7 @@ location, history, otros objetos)
 * [11-APIs HTML5](./11-apis.md): Drag and drop. API Storage. Geolocalización. API de Google Maps
 * [12-Más cosas a aprender...](./12-mas.md): WebComponents. WebSockets. WebWorkers. Typescript.
 * [13-Tests](./13-tests.md): Testear JS con Jest
-<!--
-1. Sintaxis
-2. Objetos nativos
-Ejercicios tema 2
-3. Objetos
-4. Clases
-5. Arrays
-9. BOM
-Ejercicios tema 3
-10. Eventos
-11. Formularios
-12. DOM
-Ejercicios tema 4
-13. Ajax
-Ejercicios tema 5
--->
+
 # Introducción a Javascript
 - [BLOQUE 1 - El lenguaje Javascript](#bloque-1---el-lenguaje-javascript)
 - [Introducción a Javascript](#introducción-a-javascript)
