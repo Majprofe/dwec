@@ -7,7 +7,7 @@ En primer lugar veremos una introducción al [desarrollo web y las arquitecturas
 2. **[Vue](02-vue)**: en este bloque usaremos el framework Javascript **Vue JS**
 
 ## Ejercicios
-Accede a los [ejercicios y retos](./ejercicios.md) propuestos del módulo DWEC.
+Accede a los **[ejercicios y retos](./ejercicios.md)** propuestos del módulo DWEC.
 
 ---
 
