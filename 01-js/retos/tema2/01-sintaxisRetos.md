@@ -124,6 +124,33 @@ Crea otra función que muestre una lista con los meses del año excepto los mese
 
 **Reto adicional**: Realiza ambas funciones de dos maneras diferentes.
 
-### 13. `u1efinal_trivial.html`
+### 13 `intervalo15.js`
+Crea un programa que muestre por consola todas las horas que van desde las 15:00 a las 17:00 de 15 en 15 minutos (ej. 15:00, 15:15, 15:30, 15:45, 16:00, 16:15, 16:30, 16:45, 17:00).
+
+### 14 `intervaloalacarta.html`
+Vamos a mejorar el ejercicio anterior creando un programa que pida al usuario:
+- la hora de inicio (ej. 15:00)
+- la hora de finalización (ej. 17:00)
+- el intervalo de minutos (sólo el número, ej. 15)
+
+Y muestre por consola todas las horas que van desde la hora de inicio a la de finalización de X en X minutos (ej. 15:00, 15:15, 15:30, 15:45, 16:00, 16:15, 16:30, 16:45, 17:00).
+
+Debes controlar:
+- las horas de inicio y fialización deben ser una hora válida (la hora un número entero entre 0 y 24 y los minutos un número entero entre 0 y 59, ambos separados por el carácter ":")
+- el intervalo de minutos deben ser un número entero mayor que 0
+- si un valor introducido no es correcto se muestra al usuario un mensaje informando del error (un alert) y se le vuelve a pedir el valor
+- en la consola las horas y los minutos se deben mostrar siempre con 2 números (09:03 y no 9:3)
+
+### 15 `contraseña.html`
+Crea un programa que pida al usuario que introduzca una contraseña y compruebe si es o no segura. Para ello comprobará:
+- que su longitud sea mayor o igual de 8 caracteres
+- que contiene alguna mayúscula
+- que contiene alguna minúscula
+- que contiene algún número
+- que contiene alguno de estos caracteres: guión, barra baja, igual, asterisco, mas, dólar, arroba o almohadilla
+
+Si cumple todos los requisitos se informará por consola que la contraseña introducida es segura. Si no cumple 1 o 2 se le dirá que es poco segura y si no cumple más de 2 se le dirá que es una contraseña débil.
+
+### 16. `u1efinal_trivial.html`
 
 Crea un juego de Trivial donde el jugador debe responder 6 preguntas de distintas categorías. El juego termina cuando el jugador acierta 4 preguntas o falla 3.
