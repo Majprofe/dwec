@@ -90,13 +90,7 @@ function contandoMinas(Campo)
 ```
 La función devolverá un array bidimensional con el numero de minas adyacentes en cada posición.
 Por ejemplo:
-| Entrada     | Salida      |
-|-------------|-------------|
-| 0  0 -1 0   | 1  3 -1 2   |
-| 0 -1 -1 0   | 1 -1 -1 2   |
-|-------------|-------------|
-| -1 -1 -1 -1 | -1 -1 -1 -1 |
-| -1 -1 -1  0 | -1 -1 -1  3 |
+<img src="./tabla.png" alt="Tabla de minas">
 
 ---
 
