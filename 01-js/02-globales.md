@@ -8,7 +8,7 @@
 
 
 ## Introducción
-En este tema vamos a ver las funciones globales de Javascript (muchas de las cuales ya hemos visto como _Number()_ o _String()_) y los objetos nativos que incorpora Javascript y que nos facilitarán el trabajo proporcionándonos métodos y propiedades útiles para no tener que "reinventar la rueda" en nuestras aplicaciones. Dentro de ellos está el objeto **RegExpr** que nos permite trabajar con **expresiones regulares** (son iguales que en otros lenguajes) que nos serán de gran ayuda, sobre todo a la hora de validar formularios y que por eso veremos en la siguiente unidad.
+En este tema vamos a ver las funciones globales de Javascript (muchas de las cuales ya hemos visto como _Number()_ o _String()_) y los objetos nativos que incorpora Javascript que nos facilitarán el trabajo proporcionándonos métodos y propiedades útiles para no tener que "reinventar la rueda" en nuestras aplicaciones. Dentro de ellos está el objeto **RegExpr** que nos permite trabajar con **expresiones regulares** (son iguales que en otros lenguajes) que nos serán de gran ayuda, sobre todo a la hora de validar formularios que veremos en el apartado 8 (Validación de formularios).
 
 ## Funciones globales
 * `parseInt(valor)`: devuelve el valor pasado como parámetro convertido a entero o _NaN_ si no es posible la conversión. Este método es mucho más permisivo que _Number_ y convierte cualquier cosa que comience por un número (si encuentra un carácter no numérico detiene la conversión y devuelve lo convertido hasta el momento). Ejemplos:
@@ -66,7 +66,7 @@ console.log( isFinite(3.84 / 0) )            // imprime false
   * Encoded: “http%3A%2F%2Fdomain.com%3Fval%3D1%202%203%26val2%3Dr%2By%256”
   
 ## Objetos nativos del lenguaje
-En Javascript casi todo son objetos. Ya hemos visto diferentes objetos:
+En Javascript casi todo son objetos. Como por ejemplo:
 - window
 - screen
 - navigator
@@ -74,7 +74,7 @@ En Javascript casi todo son objetos. Ya hemos visto diferentes objetos:
 - history
 - document
 
-Los 5 primeros se corresponden al modelo de objetos del navegador (_BOM, Browser Object Model_) y _document_ se corresponde al modelo de objetos del documento (_DOM, Document Object Model_, ya lo hemos visto). Todos nos permiten interactuar con el navegador para realizar distintas acciones.
+Los 5 primeros se corresponden al modelo de objetos del navegador (_BOM, Browser Object Model_) y _document_ se corresponde al modelo de objetos del documento (_DOM, Document Object Model_). Todos nos permiten interactuar con el navegador para realizar distintas acciones.
 
 Pero además tenemos los tipos de objetos nativos, que no dependen del navegador. Son:
 - Number
@@ -89,7 +89,7 @@ Pero además tenemos los tipos de objetos nativos, que no dependen del navegador
 
 Además de los tipos primitivos de número, cadena, booleano, undefined y null, Javascript tiene todos los objetos indicados. Como vimos se puede crear un número usando su tipo primitivo (`const num = 5`) o su objeto (`const num = new Number(5)`) pero es mucho más eficiente usar los tipos primitivos. Pero aunque lo creemos usando el tipo de dato primitivo se considera un objeto y tenemos acceso a todas sus propiedades y métodos (`num.toFixed(2)`).
 
-Ya hemos visto las principales propiedades y métodos de [_Number_](./01-sintaxis.html#number), [_String_](./01-sintaxis.html#string), [Boolean](./01-sintaxis.html#boolean) y [_Array_](./02-arrays.html) y aquí vamos a ver las de **Math** y **Date** y en el apartado de validar formularios las de **RegExp**.
+Ya hemos visto las principales propiedades y métodos de [_Number_](./01-sintaxis.html#number), [_String_](./01-sintaxis.html#string), [Boolean](./01-sintaxis.html#boolean) y aquí vamos a ver las de **Math** y **Date** y en el apartado de validar formularios las de **RegExp**.
 
 ## Objeto Math
 Proporciona constantes y métodos para trabajar con valores numéricos:
@@ -129,12 +129,12 @@ Es la clase que usaremos siempre que vayamos a trabajar con fechas. Al crear una
 Ejemplos:
 
 ```javascript
-const date1=new Date()    // Mon Jul 30 2018 12:44:07 GMT+0200 (CEST) (es cuando he ejecutado la instrucción)
+const date1=new Date()    // (fecha actual) Ej: Mon Jul 30 2018 12:44:07 GMT+0200 (CEST) 
 const date7=new Date(1532908800000)    // Mon Jul 30 2018 00:00:00 GMT+0200 (CEST) (miliseg. desde 1/1/1070)
 const date2=new Date('2018-07-30')    // Mon Jul 30 2018 02:00:00 GMT+0200 (CEST) (la fecha pasada a las 0h. GMT)
 const date3=new Date('2018-07-30 05:30')  // Mon Jul 30 2018 05:30:00 GMT+0200 (CEST) (la fecha pasada a las 05:300h. local)
-const date6=new Date('30-07-2018')    // Mon Jul 30 2018 00:00:00 GMT+0200 (CEST) (OJO: formato MM-DD-AAAA)
-const date6=new Date('07-30-2018')    // Invalid date
+const date6=new Date('30-07-2018')    //  Invalid date (OJO: formato MM-DD-AAAA)
+const date6=new Date('07-30-2018')    // Mon Jul 30 2018 00:00:00 GMT+0200 (CEST)
 const date7=new Date('30-Jul-2018')    // Mon Jul 30 2018 00:00:00 GMT+0200 (CEST) (tb. podemos poner 'July')
 const date4=new Date(2018,7,30)    // OJO: Thu Ago 30 2018 00:00:00 GMT+0200 (CEST) (OJO: 0->Ene,1->Feb... y a las 0h. local)
 const date5=new Date(2018,7,30,5,30)    // OJO: Thu Ago 30 2018 05:30:00 GMT+0200 (CEST) (OJO: 0->Ene,1->Feb,...)
