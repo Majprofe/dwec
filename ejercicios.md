@@ -18,7 +18,8 @@ La distribución de los contenidos y las actividades correspondientes es la sigu
 - Actividades tema 5
 
 ### Retos:
-- [Tema 2](./01-js/retos/tema2/01-sintaxisRetos.md)
+- [Tema 2](./01-js/retos/02-retos.md)
+- [Tema 3](./01-js/retos/03-retos.md)
 
 ### Actividades:
 - [Tema 1](./01-js/actividades/tema1/01-actividades.md)
