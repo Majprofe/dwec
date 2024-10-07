@@ -40,7 +40,39 @@ Completa el archivo con dos funciones más que te permitan mostrar la hora en lo
 - Hora en formato largo: 14:30:25.
 - Hora con PM/AM: 02:30 AM si es antes de mediodía, o 02:30 PM si es después de mediodía. No se utilizan horas mayores que 12 ni menores que 1 (no existe 00:30).
 
-## Ejercicio 9: u3e5_window.html
+## Ejercicio 9: u3e5_objetos.html
+Crea tres objetos que almacenen información de sandkills:
+- **sandkill1**: creado como un literal.
+- **sandkill2**: creado con la definición `new Object()`.
+- **sandkill3**: creado a partir de una clase `Sandkill`.
+
+Los tres objetos tendrán las propiedades: `nombre`, `edad`, `especialidad`, y un método `.toString()` que devuelva una cadena con la información en una línea. Posteriormente:
+- Añade a `sandkill1` la propiedad `nacionalidad`.
+- Añade a `sandkill2` la propiedad `lenguajeFavorito`.
+- Elimina de `sandkill3` la propiedad `especialidad`.
+
+Crea una función que muestre todas las propiedades de un objeto `Sandkill` sin usar el método `.toString()`.
+
+## Ejercicio 10: u3e6_clases.html
+Crea una clase para almacenar información de Sandkills con las siguientes propiedades y métodos:
+- **Propiedades**: `nombre`, `edad`, `especialidad` (1: Sistemas, 2: Web, 3: Multiplataforma), y `compañero` (otro objeto de tipo Sandkill).
+- **Métodos**:
+  - `.toString()`: devuelve la información del Sandkill usando los getters.
+  - Getters: `.getNombre()`, `.getEdad()`, `.getEspecialidad()`, `.getNombreCompanero()`, `.getCompanero()`.
+  - Setters: `.setNombre()`, `.setEdad()`, `.setEspecialidad()`, `.setEspecialidadNombre()`, `.setCompanero()`.
+
+## Ejercicio 11: u3e7_arrays.html
+Utilizando la clase `Sandkill` del ejercicio anterior, realiza un programa que permita gestionar un array de sandkills con las siguientes operaciones:
+- Insertar un sandkill al principio de la lista.
+- Insertar un sandkill al final de la lista.
+- Borrar el primer sandkill de la lista.
+- Borrar el último sandkill de la lista.
+- Mostrar la lista de sandkills.
+- Mostrar la lista de sandkills ordenada.
+- Buscar un sandkill por su nombre.
+- Buscar un sandkill por su posición.
+
+## Ejercicio 12: u3e8_window.html
 Realiza un programa con una ventana principal y tres botones:
 - **Abrir**: abrirá una pequeña ventana pop-up sin barras, scroll y no permitirá redimensionarse.
 - **Cerrar**: cerrará la ventana creada.
@@ -51,44 +83,12 @@ En la ventana secundaria (pop-up) habrá:
 - Un botón para cerrar la ventana.
 - Un botón para mover la ventana a una posición indicada por el usuario (se solicitarán dos valores separados por coma para la posición desde arriba y desde la izquierda).
 
-## Ejercicio 10: u3e6_windowtiempo.html
+## Ejercicio 13: u3e9_windowtiempo.html
 Crea un reloj con cronómetro en JavaScript. El cronómetro tendrá:
 - Un botón para poner a 0 el contador.
 - Un botón para arrancar el cronómetro.
 - Un botón para parar el cronómetro.
 - Un botón para escribir el valor del cronómetro parado en la página.
-
-## Ejercicio 11: u3e7_objetos.html
-Crea tres objetos que almacenen información de sandkills:
-- **sandkill1**: creado como un literal.
-- **sandkill2**: creado con la definición `new Object()`.
-- **sandkill3**: creado a partir de una clase `Sandkill`.
-
-Los tres objetos tendrán las propiedades: `nombre`, `edad`, `especialidad`, y un método `.mostrar()` que devuelva una cadena con la información en una línea. Posteriormente:
-- Añade a `sandkill1` la propiedad `nacionalidad`.
-- Añade a `sandkill2` la propiedad `lenguajeFavorito`.
-- Elimina de `sandkill3` la propiedad `especialidad`.
-
-Crea una función que muestre todas las propiedades de un objeto `Sandkill` sin usar el método `.mostrar()`.
-
-## Ejercicio 12: u3e8_clases.html
-Crea una clase para almacenar información de Sandkills con las siguientes propiedades y métodos:
-- **Propiedades**: `nombre`, `edad`, `especialidad` (1: Sistemas, 2: Web, 3: Multiplataforma), y `compañero` (otro objeto de tipo Sandkill).
-- **Métodos**:
-  - `.mostrar()`: devuelve la información del Sandkill usando los getters.
-  - Getters: `.getNombre()`, `.getEdad()`, `.getEspecialidad()`, `.getNombreCompanero()`, `.getCompanero()`.
-  - Setters: `.setNombre()`, `.setEdad()`, `.setEspecialidad()`, `.setEspecialidadNombre()`, `.setCompanero()`.
-
-## Ejercicio 13: u3e9_arrays.html
-Utilizando la clase `Sandkill` del ejercicio anterior, realiza un programa que permita gestionar un array de sandkills con las siguientes operaciones:
-- Insertar un sandkill al principio de la lista.
-- Insertar un sandkill al final de la lista.
-- Borrar el primer sandkill de la lista.
-- Borrar el último sandkill de la lista.
-- Mostrar la lista de sandkills.
-- Mostrar la lista de sandkills ordenada.
-- Buscar un sandkill por su nombre.
-- Buscar un sandkill por su posición.
 
 ## Ejercicio 14: u3e10_prueba_final_electricidad.html
 Diseña un programa que gestione los siguientes datos:
