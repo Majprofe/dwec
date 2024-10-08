@@ -8,13 +8,13 @@ La distribución de los contenidos y las actividades correspondientes es la sigu
 3. Objetos
 4. Clases
 5. Arrays
-9. BOM
+6. BOM
 - Actividades tema 3
-10. Eventos
-11. Formularios
-12. DOM
+7. Eventos
+8. Formularios
+9. DOM
 - Actividades tema 4
-13. Ajax
+10. Ajax
 - Actividades tema 5
 
 ### Retos:
