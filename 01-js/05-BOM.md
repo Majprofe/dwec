@@ -11,7 +11,7 @@
     - [Otros objetos](#otros-objetos)
 
 ## Introducción
-Si en el tema anterior vimos cómo interactuar con el documento mostrado en la página (_DOM_) en este veremos cómo acceder a objetos que nos permitan interactuar con el navegador (_Browser Object Model, BOM_).
+En este tema vamos a ver cómo acceder a objetos que nos permitan interactuar con el navegador (_Browser Object Model, BOM_).
 
 Usando los objetos BOM podemos:
 * Abrir, cambiar y cerrar ventanas
@@ -26,7 +26,7 @@ Permiten ejecutar código en el futuro (cuando transcurran los milisegundos indi
 * `setInterval(función, milisegundos)`: ejecuta la función cada vez que transcurran los milisegundos indicados, hasta que sea cancelado el _timer_. A ambas se le pueden pasar más parámetros tras los milisegundos y serán los parámetros que recibirá la función a ejecutar.
 
 Ambas funciones devuelven un identificador que nos permitirá cancelar la ejecución del código usando:
-* `clearTiemout(identificador)`
+* `clearTimeout(identificador)`
 * `clearInterval(identificador)`
 
 Ejemplo:

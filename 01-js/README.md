@@ -5,10 +5,10 @@ En este primer bloque vamos a conocer el lenguaje Javascript. El bloque se divid
 * [2-Objetos nativos](./02-globales.md): Funciones globales. Objetos nativos del lenguaje: Math, Date, RegExp, ...
 * [3-Objetos](./03-objetos.md): Introducción a los objetos en Javascript
 * [4-Programación Orientada a Objetos](./04-oop.md): Introducción. Clases. POO en JS5
-* [5-Browser Object Model - BOM](./06-BOM.md): Timers. Objetos del BOM (window, location, history...)
-* [6-Arrays](./05-arrays.md): Métodos. _Functional Programming_. Referencia vs copia. Rest y Spread. Desestructuración de arrays. Map. Set
-  * [Vite](./05.1-vite.md): Cómo usar vite
-  * [Webpack](./05.1-webpack.md): Cómo usar webpack
+* [5-Browser Object Model - BOM](./05-BOM.md): Timers. Objetos del BOM (window, location, history...)
+* [6-Arrays](./06-arrays.md): Métodos. _Functional Programming_. Referencia vs copia. Rest y Spread. Desestructuración de arrays. Map. Set
+  * [Vite](./06.1-vite.md): Cómo usar vite
+  * [Webpack](./06.1-webpack.md): Cómo usar webpack
 * [7-Eventos](./07-eventos.md): Escuchadores. Tipos de eventos. Los objetos _this_ y _event_. Propagación de eventos (_bubbling_)
 * [8-Validación de formularios](./08-forms.md): Validación de formularios. La API de validación de formularios. Expresiones regulares
 * [9-Document Object Model - DOM](./09-DOM.md): Acceso a nodos. Acceso desde otros nodos. Manipular el árbol DOM. Atributos de los nodos
