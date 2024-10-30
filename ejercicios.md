@@ -20,10 +20,13 @@ La distribución de los contenidos y las actividades correspondientes es la sigu
 ### Retos:
 - [Tema 2](./01-js/retos/02-retos.md)
 - [Tema 3](./01-js/retos/03-retos.md)
+- [Tema 4](./01-js/retos/04-retos.md)
 
 ### Actividades:
 - [Tema 1](./01-js/actividades/tema1/01-actividades.md)
 - [Tema 2](./01-js/actividades/tema2/02-actividades.md)
 - [Tema 3](./01-js/actividades/tema3/03-actividades.md)
+- [Tema 4](./01-js/actividades/tema4/04-actividades.md)
+
 
 ### Pruebas técnicas:
