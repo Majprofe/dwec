@@ -134,7 +134,18 @@ Se producen en los formularios:
 
 ## Los objetos _this_ y _event_
 Al producirse un evento se generan automáticamente en su función manejadora 2 objetos:
-* **this**: siempre hace referencia al elemento que contiene el código en donde se encuentra la variable _this_. En el caso de una función escuchadora será el elemento que tiene el escuchador que ha recibido el evento
+* **this**: cuando añades un escuchador de eventos a un elemento, el valor de this dentro de esa función será el elemento al que se le ha asociado el evento. Es decir, this se refiere al elemento HTML que “escucha” el evento.
+```javascript
+<button id="myButton">Haz clic aquí</button>
+
+const button = document.getElementById("myButton");
+button.addEventListener("click", function() {
+    console.log(this); // Aquí `this` es el botón `myButton`
+    this.textContent = "¡Hiciste clic!"; //Cambiaría el texto del botón de esta manera
+
+});
+```
+
 * **event**: es un objeto y la función escuchadora lo recibe como parámetro. Tiene propiedades y métodos que nos dan información sobre el evento, como:
   * **.type**: qué evento se ha producido (click, submit, keyDown, ...)
   * **.target**: el elemento donde se produjo el evento (puede ser _this_  o un descendiente de _this_, como en el ejemplo siguiente) 
