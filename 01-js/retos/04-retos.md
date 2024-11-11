@@ -28,27 +28,51 @@ Crea una web que valide los siguientes códigos para control de producto:
 - **Cocinero**: dos letras mayúsculas, símbolo, y cuatro dígitos (ej. WW$1234).
 - **Destinatario**: dos o tres letras mayúsculas, guión bajo, ciudad en minúsculas, dos puntos, y código de distrito de 4 dígitos (ej. NM_alburquerque:1234).
 - **Gramos**: número del 1000 al 5000.
-- **Composición**: cantidad en gramos y elementos químicos (ej. 200gC3OH7).
-- **Número de cuenta de EEUU**: formato con letras, dígitos, guiones, y verificaciones específicas.
+- **Composición**: estará formado por una cantidad en gramos seguida de dos conjuntos de una o dos letras seguidas o no de un número. (ej. 200gC3OH7).
+- **Número de cuenta de EEUU**: supongamos que un número de cuenta estadounidense tiene el siguiente formato:
+1. 	Dos letras: suponemos que el valor de cada letra es del 1 al 26 (no hay ñ ni ll).
+2. 	Dos dígitos: debe corresponderse con la suma de la primera letra y la segunda: en caso de que sea menor que 10 se pone el 0 delante.
+3. 	Un guión.
+4. 	Doce dígitos de cuenta
+5. 	Un guión.
+6. 	Dos dígitos de control: los dos primeros deben ser la suma de los 6 primeros dígitos de la cuenta dividido entre 6 y extrayendo solamente su parte entera; y los dos últimos exactamente igual, pero con los 6 siguientes.
+7. 	Si el número está correcto se colocará en un campo de texto al lado del anterior, pero sin guiones: solamente los números y las letras.
+
 
 ## 4. `u4e4_localStorage.html`
-Añade al formulario del reto `u4e2` contadores en la esquina superior derecha:
-- **Número de forfaits diarios**: usa una cookie que expira a las 23:59:59 de cada día.
-- **Número de socios del club de ski**: contador específico para estos usuarios.
+Al formulario que hiciste en el reto u4e2 le falta una pequeña gestión de usuarios registrados diarios para que los de las taquillas lleven el control.
+Para ello deberás incluir en la parte superior derecha de la página dos pequeños contadores:
+-	El primero contabiliza el número de forfaits registrados ese día. Para ello guarda ese valor en una cookie que expirará a las 23:59:59 de ese mismo día. Por tanto, cada vez que el formulario sea válido, sumará uno al contador. ¡Cuidado con las fechas!
+-	El segundo será similar al primero pero solo contabilizará aquellos socios que son del club de ski.
+Además, cada contador incluirá a su lado un botón «Resetear» que permitirá ponerlo a 0 en cualquier momento. 
 
-Ambos contadores deben incluir un botón "Resetear" para poner el valor a 0.
+Recuerda que el código html deberá estar separado del código javascript, y que cada archivo javascript debería almacenar funciones que solamente hagan referencia a un tema.
+
 
 ## 5. `u4e5_modificarelementos.html`
-Diseña una página con varios personajes:
-- Imágenes de al menos 8 personajes en una tabla.
-- Panel informativo con textos y botones para modificar el aspecto de las imágenes y mostrar distintos textos en el panel.
-- Los botones deben filtrar imágenes por clases, como personajes de "La familia Simpson" o "trabajadores de la central nuclear".
+Diseña una página informativa que contenga varios personajes. Pueden ser personajes de una serie o película, miembros de un grupo de música, personajes históricos, etc.
+Por un lado, dispondrás de un conjunto de imágenes de los personajes, mínimo 8 (puedes alojarlas en una tabla). Por otro lado, tendrás un panel informativo que alojará textos. Y, por último, una serie de botones (mínimo 3).
+Al poner el ratón sobre cada una de las imágenes se mostrará información del personaje pulsado en el panel informativo.
+Además, al pulsar los botones, permitirá modificar el aspecto de ciertas imágenes que formen parte de una clase determinada y mostrará un texto diferente en el panel. Habrá imágenes que tengan más de una clase. 
+Por ejemplo, si decides hacerlo sobre personajes de los Simpson, puedes poner un botón que seleccione los personajes de la Familia Simpson; otro que seleccione los personajes que van al instituto; otro de los personajes que trabajan en la central nuclear… de tal manera que, por ejemplo, Bart es de la familia Simpson y además va al instituto; o Hommer es de la familia Simpson y trabaja en la central nuclear. Recuerda que el código html deberá estar separado del código javascript, y que cada archivo javascript debería almacenar funciones que solamente hagan referencia a un tema.
 
 ## 6. `u4e6_crearborrarelementos.html`
-Basado en el ejercicio anterior, crea una página con un formulario para añadir fichas de personajes/artículos. Los datos mínimos deben incluir título, imagen, URL y texto, y deben generarse al pulsar un botón.
+Basada en la temática del ejercicio anterior, crea una página en la que, haciendo uso de todo lo aprendido hasta ahora, puedas crear un catálogo de personajes/artículos/etc. a modo de fichas o cartas.
+Para ello crearás un pequeño formulario que te permitirá añadir los valores que quieras (al menos un título, una imagen, una url y un pequeño texto), y un botón que, al pulsarlo, generará la ficha o carta y la añadirá a tu página web.
 
 ## 7. `u4e7_recorrerElementos.html`
-Diseña un analizador de formularios que extraiga información de cada elemento:
-- Numerará cada elemento y mostrará detalles en un `div` para inputs, textareas, botones, labels, selects y comentarios.
+Diseña un analizador de formularios que te permita extraer toda la información de un formulario, independientemente de cómo se encuentre diseñado.
 
-El código debe funcionar para formularios con cualquier combinación de elementos.
+Para ello, crea una página que incluya un formulario cualquiera, un div y un botón. Al pulsar el botón deberá realizar las siguientes acciones:
+-	Recorrerá desde el primero al último todos los elementos del formulario, numerándolos.
+-	Por cada elemento input que encuentre, indicará, en el div, que se ha encontrado un input, de qué tipo es, qué clase tiene, qué id tiene, qué nombre tiene, y su valor. Por ejemplo: «1. INPUT. Tipo: text. Nombre: usuario. Clase: no tiene. Id: no tiene. Valor: sandiego».
+-	Por cada elemento textarea/button que encuentre, indicará, en el div, que se ha encontrado un textarea/un button, su clase, id y nombre, si tiene, y su valor.
+-	Por cada label que encuentre, indicará, en el div, que se ha encontrado un label, su clase, id y nombre, si tiene, y su atributo «for».
+-	Por cada select, indicará, en el div, que se ha encontrado un select, su clase, id y nombre, si tiene, y cada uno de los valores de los option que contiene.
+-	Si hay un elemento de tipo comentario (ver enlace: http://www.w3schools.com/jsref/prop_node_nodetype.asp) mostrará simplemente, que se ha encontrado un elemento de tipo comentario, y su valor.
+-	No se tendrán en cuenta elementos de tipo fieldset, datalist, keygen u output.
+
+Por ejemplo: «1. INPUT. Tipo: text. Nombre: usuario. Clase: no tiene. Id: no tiene. Valor: sandiego».
+
+Ten en cuenta que el código que crees debe servir para todos los formularios, independientemente de los elementos que contengan.
+
