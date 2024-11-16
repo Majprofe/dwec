@@ -49,6 +49,7 @@ Haz lo siguiente:
    - Contraseña (texto)
    - Edad (número)
    - Número de teléfono (texto)
+   - Nickname (texto)
    - Botón de enviar
 
 2. Enlaza un archivo JavaScript que valide lo siguiente al hacer clic en el botón de enviar:
@@ -57,6 +58,11 @@ Haz lo siguiente:
    - La contraseña debe tener al menos 8 caracteres.
    - La edad debe ser mayor o igual a 18.
    - El número de teléfono debe seguir el siguiente patrón (+XX-XXXXXX) X corresponde a un número.
+   - El nickname debe coincidir con:
+        - Las dos primeras letras del nombre
+        - El sufijo del dominio del email (com o es por ejemplo)
+        - Edad
+        - Tercer y cuarto dígito del número de teléfono después del guión.
 
 3. Si hay algún error, muestra un mensaje junto al campo correspondiente.
 
