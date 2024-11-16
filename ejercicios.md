@@ -27,6 +27,8 @@ La distribución de los contenidos y las actividades correspondientes es la sigu
 - [Tema 2](./01-js/actividades/tema2/02-actividades.md)
 - [Tema 3](./01-js/actividades/tema3/03-actividades.md)
 - [Tema 4](./01-js/actividades/tema4/04-actividades.md)
+- [Repaso hasta formularios](./01-js/actividades/tema4/04-ejercicios-repaso-hasta-formularios.md)
+
 
 
 ### Pruebas técnicas:
