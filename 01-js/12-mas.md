@@ -88,7 +88,7 @@ console.log('Conexión cerrada');
 Para programar la parte del servidor podemos usar librerías que nos ayudan como [PHP-WebSockets](https://github.com/ghedipunk/PHP-WebSockets), SocketIO, ...
 
 Las aplicaciones de esta tecnología son muchas:
-* Juegos multjugador
+* Juegos multijugador
 * Aplicaciones de chat
 * Actualización en tiempo real de cotizaciones de bolsa, recursos en uso o cualquier otra información
 * ...

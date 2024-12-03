@@ -604,6 +604,12 @@ fetch(url, {
 
 Podéis ver mś ejemplos en [MDN web docs](https://developer.mozilla.org/es/docs/Web/API/Fetch_API/Utilizando_Fetch#Enviando_datos_JSON) y otras páginas.
 
+> EJERCICIO 1: Vamos a listar usuarios de la API pública [JSONPlaceholder](https://jsonplaceholder.typicode.com/) mostrando los usuario en la consola, para eso utiliza fetch para hacer la petición. Reto adicional: Muestra la lista de usuarios en una tabla HTML con las columnas: ID, Título, y Body.
+
+> EJERCICIO 2: Define un objeto  con la propiedades title, body y userId. Usa fetch para realizar una petición POST a la URL https://jsonplaceholder.typicode.com/posts Reto adicional: Crea un formulario en HTML para que el usuario pueda ingresar el título y contenido del post. Envía los datos del formulario al servidor al hacer clic en un botón.
+
+
+
 ### La mejor solución: _async / await_
 Estas nuevas instrucciones introducidas en ES2017 nos permiten escribir el código de peticiones asíncronas como si fueran síncronas lo que facilita su comprensión. Tened en cuenta que NO están soportadas por navegadores antiguos.
 
@@ -654,6 +660,8 @@ En este código no estamos tratando los posibles errores que se pueden producir.
 <script async src="//jsfiddle.net/juansegura/sojvq7r0/embed/js,html,result/"></script>
 
 También podemos tratarlos sin usar _try...catch_ porque como una función asíncrona devuelve una promesa podemos suscribirnos directamente a su _.catch_
+
+> EJERCICIO: Cambia el código de los ejercicios anteriores para utilizar async await y try ... catch
 
 ### Hacer varias peticiones simultáneamente. Promise.all
 En ocasiones necesitamos hacer más de una petición al servidor. Por ejemplo para obtener los productos y sus categorías podríamos hacer:

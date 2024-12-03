@@ -19,7 +19,7 @@ Si queremos que una tabla de **json-server** tenga un campo autonumérico (ideal
 
 Hay innumerables páginas donde obtener más información sobre como crear nuestra API con json-server, como [desarrolloweb.com](https://desarrolloweb.com/articulos/crear-api-rest-json-server.html).
 
-Para familiarizarnos con esta API (o con cualquier otra) vamos a instalar una extensión en nuestro navegador que nos permita enviar peticiones API-REST y ver qué se recibe del servidor. Hay muchas diferentes como [Advanced REST client](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo) para Chrome o [RESTClient](https://addons.mozilla.org/es/firefox/addon/restclient/) para Firefox.
+Para familiarizarnos con esta API (o con cualquier otra) vamos a instalar una extensión en nuestro navegador que nos permita enviar peticiones API-REST y ver qué se recibe del servidor. Hay muchas diferentes como [Advanced REST client](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo) para Chrome o [RESTClient](https://addons.mozilla.org/es/firefox/addon/restclient/) para Firefox o Postman.
 
 Una vez hecho probaremos a hacer peticiones a nuestro servidor JSON para añadir, modificar o borrar datos del mismo y familiarizarnos así con la API.
 
