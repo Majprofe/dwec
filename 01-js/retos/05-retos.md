@@ -23,32 +23,24 @@ https://restcountries.com/v3.1/all
 ## Reto 2: Galería de Películas
 
 ### **Objetivo**  
-Consumir la API de TMDB para mostrar las películas más populares en tarjetas estilizadas y añadir una funcionalidad de filtro por género.
+Consumir la API de [OMDB](https://www.omdbapi.com/) mostrar las películas del año actual.
 
 ### **Descripción**
-1. Usa la API de TMDB para obtener:
-   - La lista de películas populares.
-   - La lista de géneros disponibles.
+1. Usa la API de OMDB para obtener:
+   - La lista de películas de este año.
 2. Muestra las películas en tarjetas que incluyan:
    - Imagen de la película.
    - Título.
    - Fecha de estreno.
-   - Puntuación (Rating).
-3. Añade un menú desplegable que permita al usuario filtrar las películas por género.
 
 ### **API endpoints**
-- Obtener películas populares:
+- Obtener películas del año 2024:
   ```
-  https://api.themoviedb.org/3/movie/popular?api_key=TU_API_KEY&language=es-ES&page=1
-  ```
-- Obtener géneros:
-  ```
-  https://api.themoviedb.org/3/genre/movie/list?api_key=TU_API_KEY&language=es-ES
+  https://www.omdbapi.com/?s=movie&y=2024&page=${page}&apikey=${apiKey}
   ```
 
 ### **Requisitos**
 - Implementa CSS avanzado para estilizar las tarjetas (incluye sombras, efectos de hover, etc.).
-- Añade un menú desplegable que filtre las películas por género.
 - Gestiona los errores en caso de que la API falle.
 
 ### **Mejoras**
