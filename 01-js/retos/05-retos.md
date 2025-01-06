@@ -99,9 +99,6 @@ Con los siguientes endpoints de la API:
 - **Naves (Starships)**
   - Obtener todas las naves espaciales: `https://www.swapi.tech/api/starships/`
   - Obtener una nave específica: `https://www.swapi.tech/api/starships/{id}/`
-- **Vehículos (Vehicles)**
-  - Obtener todos los vehículos: `https://www.swapi.tech/api/vehicles/`
-  - Obtener un vehículo específico: `https://www.swapi.tech/api/vehicles/{id}/`
 - **Especies (Species)**
   - Obtener todas las especies: `https://www.swapi.tech/api/species/`
   - Obtener una especie específica: `https://www.swapi.tech/api/species/{id}/`
