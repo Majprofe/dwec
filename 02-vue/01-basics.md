@@ -10,7 +10,7 @@
     - [Enlace unidireccional: interpolación {{...}}](#enlace-unidireccional-interpolación-)
     - [Enlazar a un atributo: v-bind](#enlazar-a-un-atributo-v-bind)
     - [Enlace bidireccional: v-model](#enlace-bidireccional-v-model)
-  - [\[Vue devtools\]](#vue-devtools)
+  - [Vue devtools](#vue-devtools)
   - [Extensiones para el editor de código](#extensiones-para-el-editor-de-código)
   - [Otras utilidades](#otras-utilidades)
   - [Cursos de Vue](#cursos-de-vue)
@@ -45,7 +45,7 @@ Para utilizar Vue sólo necesitamos enlazarlo en nuestra página desde cualquier
 
 Esta no es la forma más recomendable de trabajar. Lo normal es crear un proyecto con **_npm_** que genere un completo _scaffolding_. Esto nos permitirá trabajar con componentes (_Single File Components_ o _SFC_) lo que nos facilitará enormemente la creación de nuestras aplicaciones.
 
-Un _SFC_ es un componente reutilizable que se guarda en un fichero con extensión _.vue_. Para que _VSCode_ reconozca correctamente los ficheros _.vue_ debemos instalar la _extensión_ **Volar**.
+Un _SFC_ es un componente reutilizable que se guarda en un fichero con extensión _.vue_. Para que _VSCode_ reconozca correctamente los ficheros _.vue_ debemos instalar la _extensión_ **Vue-Official** (anteriormente _Volar_).
 
 ## Estructura de una aplicación Vue
 Vamos a crear la aplicación con Vue que mostrará un contador y un botón para actualizarlo:
@@ -78,7 +78,7 @@ Vue.createApp({
 
     <div id="app">
       <button @click="increment">
-        Count is: {\{ count }}
+        Count is: { { count }}
       </button>
     </div>
 
@@ -94,7 +94,9 @@ En este ejemplo podemos ver las 2 principales características de Vue:
 - __Renderizado declarativo__: Vue amplía HTML con una sintaxis que nos permite declarar en HTML una salida basada en un dato Javascript
 - __Reactividad__: Vue hace un seguimiento de las variables Javascript y modifica el DOM cuando alguna cambia
 
-Para probar el funcionamiento de código tenemos el **_Palyground_** de Vue al que accedemos desde su documentación en [https://vuejs.org/guide/quick-start.html#try-vue-online].
+Para probar el funcionamiento de código tenemos el **_Playground_** de Vue al que accedemos desde su documentación en [https://vuejs.org/guide/quick-start.html#try-vue-online](https://vuejs.org/guide/quick-start.html#try-vue-online).
+
+Vamos a ver qué estamos haciendo en cada fichero:
 
 ### HTML
 En el HTML debemos vincular los scripts de la librería de Vue y de nuestro código. 
@@ -162,6 +164,7 @@ export default {
   // and will be exposed on `this`.
   data() {
     return {
+      msg: "Hola",
       count: 0
     }
   },
@@ -171,6 +174,9 @@ export default {
   methods: {
     increment() {
       this.count++
+    },
+    decrement() {
+      this.count--
     }
   },
 
@@ -184,6 +190,7 @@ export default {
 </script>
 
 <template>
+  <h1>{{ msg }}</h1>
   <button @click="increment">Count is: {{ count }}</button>
 </template>
 ```
@@ -195,11 +202,15 @@ export default {
 import { ref, onMounted } from 'vue'
 
 // reactive state
+const count = ref('Hola')
 const count = ref(0)
 
 // functions that mutate state and trigger updates
 function increment() {
   count.value++
+}
+function decrement() {
+  count.value--
 }
 
 // lifecycle hooks
@@ -209,6 +220,7 @@ onMounted(() => {
 </script>
 
 <template>
+  <h1>{{ msg }}</h1>
   <button @click="increment">Count is: {{ count }}</button>
 </template>
 ```
@@ -221,7 +233,7 @@ En la [Guía de la documentación oficial de Vue](https://vuejs.org/tutorial/#st
 ### Enlace unidireccional: interpolación {\{...}}
 Donde queramos mostrar en la vista el valor de una variable simplemente la ponemos entre dobles llaves:
 ```html
-<p>Contador: {\{ counter }}</p>
+<p>Contador: { { counter }}</p>
 ```
 
 Y en el código Javascript sólo tenemos que declarar esa variable dentro del objeto devuelto por _data()_:
@@ -237,7 +249,7 @@ Y en el código Javascript sólo tenemos que declarar esa variable dentro del ob
 Podemos ver esa variable y manipularla desde la consola, y si cambiamos su valor vemos que cambia lo que muestra nuestra página. Esto es porque Vue (al igual que Angular o React) enlazan el DOM y los datos de forma que cualquier cambio en uno se refleja automáticamente en el otro.
 
 ### Enlazar a un atributo: v-bind
-Para mostrar un dato en el DOM usamos la interpolación **{\{  }}** pero si queremos nostrarlo como atributo de una etiqueta debemos usar `v-bind`:
+Para mostrar un dato en el DOM usamos la interpolación `**{ {  }}**` pero si queremos nostrarlo como atributo de una etiqueta debemos usar `v-bind`:
 ```html
   <p v-bind:title="message">
     Hover your mouse over me for a few seconds
@@ -253,7 +265,7 @@ Vue incorpora estos '_atributos_' que podemos usar en las etiquetas HTML y que s
 | Haz el ejercicio del tutorial de [Vue.js](https://vuejs.org/tutorial/#step-3)
 
 ### Enlace bidireccional: v-model
-Tanto **{\{ }}** como `v-bind` son un enlace unidireccional: muestran en el DOM el valor de un dato y reaccionan ante cualquier cambio en dicho valor. 
+Tanto **`{ { }}`** como `v-bind` son un enlace unidireccional: muestran en el DOM el valor de un dato y reaccionan ante cualquier cambio en dicho valor. 
 
 Pero además está la directiva `v-model` que es un enlace bidireccional que enlaza un dato a un campo de formulario y permite cambiar el valor del campo al cambiar el dato pero también cambia el dato si se modifica lo introducido en el input. 
 ```html
@@ -273,34 +285,24 @@ NOTA: toda la aplicación se monta en el elemento _app_ por lo que las directiva
 
 | Haz el ejercicio del tutorial de [Vue.js](https://vuejs.org/tutorial/#step-5)
 
-## [Vue devtools]
-Es una extensión para Chrome y Firefox que nos permite inspeccionar nuestro objeto Vue y acceder a todos los datos de nuestra aplicación. Es necesario instalarlo porque nos ayudará mucho a depurar nuestra aplicación, especialmente cuando comencemos a usar componentes.
+## Vue devtools
+Es una extensión para Chrome y Firefox que nos permite inspeccionar nuestro objeto Vue y acceder a todos los datos de nuestra aplicación. 
 
-Podemos buscar la extensión en nuestro navegador o acceder al enlace desde la [documentación de Vue](https://vuejs.org/guide/scaling-up/tooling.html#browser-devtools).
+Anteriormente había que instalarla pero ahora viene integrada en la herramienta de desarrollador de los navegadores.
 
-Si tenemos las DevTools instaladas en la herramienta de desarrollador aparece una nueva opción, _Vue_, con 4 botones:
+En ella tenemos distintos apartados, como:
 * Componentes: es la vista por defecto y nos permite inspeccionar todos los componentes Vue creados (ahora tenemos sólo 1, el principal, pero más adelante haremos componentes hijos)
-* Pinia/Vuex: es la herramienta de gestión de estado para aplicaciones medias/grandes
+* Pinia: es la herramienta de gestión de estado para aplicaciones medias/grandes
+* Router: permite ver las rutas de nuestra aplicación
 * Eventos: permite ver todos los eventos emitidos
-* Refrescar: refresca la herramienta
+* ...
 
 ![DevTools](./img/DevTools.png)
-
-Junto al componente que estamos inspeccionando aparece **= $vm0** que indica que DevTools ha creado una variable con ese nombre que contiene el componente por si queremos inspeccionarlo desde la consola.
-
-Cuando inspeccionamos nuestros componentes, bajo la barra de botones aparece otra barra con 3 herramientas:
-* Buscar: permite buscar el componente con el nombre introducido aquí
-* Seleccionar componente en la página: al pulsarlo (se dibuja un punto en su interior) hace que al pulsar sobre un componente en nuestra página se seleccione en la herramienta de inspeccionar componentes
-* Formatear nombre de componentes: muestra los nombres de componentes en el modo _camelCase_ o _kebab-case_
-
-NOTA: Si por algún motivo queremos trabajar sin servidor web (desde file://...) hay que habilitar el acceso a ficheros en la extensión.
-
-![DevTools](./img/DevTolols-AllowFiles.png)
 
 ## Extensiones para el editor de código
 Cuando empecemos a trabajar con componentes usaremos ficheros con extensión **.vue** que integran el HTML, el JS y el CSS de cada componente. Para que nuestro editor los detecte correctamente es conveniente instalar la extensión para Vue.
 
-En el caso de **_Visual Studio Code_** esta extensión se llama **Volar** (sustituye en _Vue 3_ a la extensión _Vetur_ que se usa con _Vue 2_). En **_Sublime Text_** tenemos el plugin **Vue Syntax Highlight**.
+En el caso de **_Visual Studio Code_** esta extensión se llama **Vue-Oficial**.
 
 ## Otras utilidades
 _Vue 3_ permite utilizar directamente _Typescript_ en nuestros componentes simplemente indicándolo al definir el SFC (lo veremos al llegar allí).
