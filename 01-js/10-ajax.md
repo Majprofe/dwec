@@ -631,7 +631,7 @@ async function pideDatos() {
 }
 ...
 // Y llamaremos a esa función con
-const myData = await pideDatos();
+const myData = pideDatos();
 ```
 
 Fijaos en la diferencia: si hago
