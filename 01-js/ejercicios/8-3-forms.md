@@ -18,6 +18,6 @@ Todos los campos son obligatorios. Queremos que muestre al usuario los siguiente
 * si lo introducido no tiene los suficientes caracteres: Debes introducir al menos X caracteres
 * si lo introducido tiene demasiados caracteres: Debes introducir como máximo X caracteres
 
-Sólo se enviará el formulario si no tiene campos erróneos. Cada campo mal rellenado se destacará en rojo y debajo del mismo se añadirá un \<div> con el texto correspondiente al error en rojo.
+Sólo se enviará el formulario si no tiene campos erróneos. Cada campo mal rellenado tendrá un borde en rojo y a la derecha del mismo se añadirá un \<span> con el texto correspondiente al error en rojo.
 
 Validaremos cada campo al salir de él y siempre antes de enviar el formulario.
