@@ -254,6 +254,6 @@ describe('average', () => {
     expect(() => average('12345')).toThrow('El argumento debe ser un array');
   });
 });
-
+```
 
 
