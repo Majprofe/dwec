@@ -103,6 +103,10 @@ Nosotros usaremos **_Vitest_** porque se integra fácilmente en Vite y porque ti
 
 npm (Node Package Manager) es esencial para gestionar dependencias en proyectos JavaScript. Para instalar npm, primero necesitas Node.js. Sigue las instrucciones en la [página oficial de Node.js](https://nodejs.org/es/download/package-manager/) para instalarlo según tu sistema operativo.
 
+Después vamos a generar un `package.json` en las carpeta en la que vamos a crear nuestro proyecto que es donde se guardan todas las dependencias de nuestro proyecto:
+```bash
+npm init -y
+```
 ---
 
 ## Vitest
@@ -112,6 +116,10 @@ Vitest es un framework de pruebas unitarias moderno diseñado para entornos basa
 Para instalar Vitest, utilizamos el siguiente comando:
 ```bash
 npm install -D vitest
+```
+También es buena práctica instalar `standard`, que es un paque que detecta errores y malas prácticas:
+```bash
+npm install -D standard
 ```
 Debemos crear archivos de prueba que tengan la extensión .test.js.
 
@@ -127,7 +135,7 @@ export default defineConfig({
   },
 });
 ```
-Después de instalarlo, en el package.json debemos ver la siguiente informaicón:
+Después de instalar Vitest, en el `package.json` debemos añadir la siguiente información en scripts:
 ```json
 {
   "scripts": {
