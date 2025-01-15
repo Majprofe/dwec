@@ -9,6 +9,7 @@
 4. [Simular el comportamiento de una función](#simular-el-comportamiento-de-una-función)
 5. [Simular módulos completos](#simular-módulos-completos)
 6. [Espías (Spies)](#espías-spies)
+7. [Practicas propuestas](#prácticas-de-ejemplo)
 
 ---
   
@@ -346,3 +347,9 @@ describe('Espías en Vitest', () => {
     spy.mockRestore(); // Restaurar la implementación original
   });
 });
+```
+---
+
+## Prácticas de ejemplo
+
+1. Testing de la función [FizzBuzz](./ejemplosclase/13-tests-fizzbuzz.md)
