@@ -373,4 +373,4 @@ describe('Espías en Vitest', () => {
 
 ## Prácticas de ejemplo
 
-1. Testing de la función [FizzBuzz](./ejemplosclase/13-tests-fizzbuzz.md)
+1. Testear diferentes funciones [Ejemplos](./ejemplosclase/13-tests-ejemplos.md)
