@@ -2,14 +2,27 @@
 
 ## Tabla de contenidos
 
-1. [Introducción a los Mocks](#introducción-a-los-mocks)
-2. [¿Cuándo usar Mocks?](#cuándo-usar-mocks)
-3. [Ejemplo básico: Simular una función](#ejemplo-básico-simular-una-función)
-   - [Explicación paso a paso](#explicación-paso-a-paso)
-4. [Simular el comportamiento de una función](#simular-el-comportamiento-de-una-función)
-5. [Simular módulos completos](#simular-módulos-completos)
-6. [Espías (Spies)](#espías-spies)
-7. [Practicas propuestas](#prácticas-de-ejemplo)
+1. [Introducción al Testing](#introducción-al-testing)
+   - [Tipos de Testing](#tipos-de-testing)
+   - [Ejemplo básico](#ejemplo-básico)
+2. [Desarrollo guiado por pruebas (TDD)](#desarrollo-guiado-por-pruebas-tdd)
+3. [Testing en JavaScript](#testing-en-javascript)
+   - [Instalación de npm](#instalación-de-npm)
+4. [Vitest](#vitest)
+   - [Instalación de Vitest](#instalación-de-vitest)
+   - [Ejemplo básico con Vitest](#ejemplo-básico-con-vitest)
+5. [Usar Vitest](#usar-vitest)
+   - [Matchers](#matchers)
+   - [Pruebas asíncronas](#pruebas-asíncronas)
+   - [Test suites](#test-suites)
+6. [Mocks](#mocks)
+   - [¿Cuándo usar Mocks?](#cuándo-usar-mocks)
+   - [Ejemplo básico: Simular una función](#ejemplo-básico-simular-una-función)
+     - [Explicación paso a paso](#explicación-paso-a-paso)
+   - [Simular el comportamiento de una función](#simular-el-comportamiento-de-una-función)
+   - [Simular módulos completos](#simular-módulos-completos)
+   - [Espías (Spies)](#espías-spies)
+7. [Prácticas de ejemplo](#prácticas-de-ejemplo)
 
 ---
   
