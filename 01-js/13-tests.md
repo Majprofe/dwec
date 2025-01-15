@@ -184,6 +184,7 @@ Para comprobar si una función lanza una excepción, se usa `toThrow`. Puedes ve
 1. Se lanzó cualquier error.
 2. El error es de un tipo específico.
 3. El mensaje del error coincide exactamente o cumple con una expresión regular.
+---
 
 ```javascript
 function compileAndroidCode() {
