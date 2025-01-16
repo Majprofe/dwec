@@ -376,3 +376,4 @@ describe('Espías en Vitest', () => {
 ## Prácticas de ejemplo
 
 1. Testear diferentes funciones [Ejemplos](./ejemplosclase/13-tests-ejemplos.md)
+2. Testear funciones con mock y spy [Ejemplos](./ejemplosclase/13-tests-ejemplos2.md)
