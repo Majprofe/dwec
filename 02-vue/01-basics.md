@@ -202,7 +202,7 @@ export default {
 import { ref, onMounted } from 'vue'
 
 // reactive state
-const count = ref('Hola')
+const title = ref('Hola')
 const count = ref(0)
 
 // functions that mutate state and trigger updates
@@ -220,7 +220,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <h1>{{ title }}</h1>
   <button @click="increment">Count is: {{ count }}</button>
 </template>
 ```
