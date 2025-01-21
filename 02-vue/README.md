@@ -5,6 +5,7 @@ En este bloque vamos a conocer el framework **Vue** que es uno de los más utili
 3. [Componentes](./03-componentes.md)
     1. [SFC](./03_1-sfc.md)
     2. [Comunicación entre componentes](./03_2-comunicar_componentes.md)
+    3. [Resumen Vue](./03_3-resumen-basico.md)
 4. [Peticiones Ajax: axios](./04-axios.md)
 5. [SPA: vue-router](./05-vue-router.md)
 6. [Profundizando en Vue](./06-profundizando.md)
