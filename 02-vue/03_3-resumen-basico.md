@@ -369,7 +369,9 @@ const props = defineProps({
 </div>
 </template>
 ```
+
 ## Emits
+
 Se usan para pasar parámetros de componentes hijos a componentes padres, se realiza a través de un evento.
 Para ello creamos un evento en el componente hijo:
 <button @click="enviar">Cambiar valores</button>
@@ -468,3 +470,8 @@ const modificar = () => {
 </template>
 
 ```
+
+## Prácticas propuestas:
+
+1. Ejercicio reyes godos: [Youtube](https://www.youtube.com/watch?v=7f7nNgZOAUc) [Datos](https://html6.es/curso/vue.zip) [Solución](https://github.com/Majprofe/reyesgodos-vue3.git)
+2. Expensive tracker: [Youtube](https://www.youtube.com/watch?v=hNPwdOZ3qFU) [RepoJs](https://github.com/bradtraversy/vanillawebprojects/tree/master/expense-tracker) [Solución](https://github.com/Majprofe/expensive-tracker-vue2)
