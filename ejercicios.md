@@ -34,3 +34,6 @@ La distribución de los contenidos y las actividades correspondientes es la sigu
 
 
 ### Pruebas técnicas:
+- [01-reading-list](./02-vue/pruebastecnicas/01-reading-list/README.md)
+- [02-bazar-universal](./02-vue/pruebastecnicas/02-bazar-universal/README.md)
+- [Rúbricas](./02-vue/pruebastecnicas/rubricas.md)

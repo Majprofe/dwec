@@ -18,3 +18,9 @@ En este bloque vamos a conocer el framework **Vue** que es uno de los más utili
 12. [Composition API](./10-vue3_composition_api.md)
 
 Podemos encontrar infinidad de documentación en Internet para ampliar lo que veremos en este bloque. Hay que destacar especialmente la [documentación oficial de Vue 3](https://v3.vuejs.org/) y [de Vue 2](https://vuejs.org/v2/guide/index.html) que es muy completa. También podemos encontrar gran cantidad de páginas, tutoriales y libros.
+
+## Material adicional:
+- [Manz.dev](https://lenguajejs.com/vuejs/)
+- [Vue desde 0](https://www.youtube.com/watch?v=7f7nNgZOAUc&t=2661s)
+- [Vue.js Crash](https://www.youtube.com/watch?v=VeNfHj6MhgA&t=5186s)
+- [Expense tracker](https://www.youtube.com/watch?v=hNPwdOZ3qFU)
