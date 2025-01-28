@@ -14,6 +14,8 @@ Para ello, queremos desarrollar una aplicación web que permita a los usuarios v
 
 Usa el archivo [books.json](./books.json) para obtener los datos de los libros. Puedes añadir más libros si lo deseas, siempre y cuando siga la misma estructura.
 
+![](./images/listalectura.jpg)
+
 ## Requisitos
 
 ### Funcionalidad
