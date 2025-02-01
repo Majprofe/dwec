@@ -76,3 +76,19 @@ Buena suerte y ¡diviértete programando!
 - Concepto de uso de arrastrar libros: https://dribbble.com/shots/19351938-Mybooks-Page-Board
 
 - Concepto de landing para una aplicación de libros: https://dribbble.com/shots/16279204-Book-Web-Store-Concept
+
+
+# Criterios de Corrección – Aplicación de Lista de Libros (Vue)
+
+| **Categoría**                 | **Requisito**                                         | **Descripción**                                                                                                                                       | **Puntos** |
+|-------------------------------|-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
+| **Visualización de Libros**   | Mostrar lista completa                                | Cargar y visualizar correctamente los libros a partir del archivo `books.json`.                                                                        | 1          |
+| **Gestión de Lista y Estado** | Mover libros y actualizar contadores                  | Permitir agregar y quitar libros de la lista de lectura, actualizando de inmediato la UI y los contadores (sincronización de estado integrada).       | 1.5        |
+| **Filtrado**                  | Filtrar por género y número de páginas                | Permitir filtrar la lista de libros por género y por número de páginas, mostrando los contadores actualizados según cada filtro aplicado.             | 1.5        |
+| **Persistencia y Sincronización** | Guardar en localStorage y sincronizar entre pestañas  | Mantener la lista de lectura tras recargar la página y sincronizar los cambios en múltiples pestañas sin usar backend.                                   | 1.5          |
+| **Despliegue**                | Publicación y URL                                     | Desplegar la aplicación en un hosting gratuito (Netlify, Vercel, Firebase, etc.) y documentar la URL de acceso en el README.                             | 0.5        |
+| **Calidad del Código**        | Organización y semántica                              | Código modular, bien organizado, uso adecuado de HTML semántico y accesible, y formato consistente (p.ej. con Prettier).                                | 2          |
+| **Documentación (README)**    | Instrucciones y explicación técnica                   | README con instrucciones claras de instalación, ejecución, despliegue y breve explicación de la arquitectura y decisiones técnicas.                 | 1        |
+| **Tests**                     | Pruebas automatizadas                                 | Implementar al menos un test crítico (por ejemplo, la funcionalidad de agregar/quitar un libro o la persistencia de datos) en la aplicación.         | 1          |
+
+**Puntuación Total: 10 puntos**
