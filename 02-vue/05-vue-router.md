@@ -11,6 +11,7 @@
   - [Saltar a una ruta](#saltar-a-una-ruta)
   - [Paso de parámetros](#paso-de-parámetros)
   - [El objeto $route](#el-objeto-route)
+  - [Uso en composition api](#composition-api)
   - [Ruta no encontrada: 404 Not found](#ruta-no-encontrada-404-not-found)
   - [Redireccionamiento](#redireccionamiento)
   - [Cambio de parámetros en una ruta](#cambio-de-parámetros-en-una-ruta)
@@ -252,6 +253,25 @@ Es un objeto que contiene información de la ruta actual (no confundir con _$rou
 - **query**: si hubiera alguna consulta en la ruta (tras '?') se obtiene aquí un objeto con ellas
 - **path**: la ruta pasada (sin servidor ni querys, por ejemplo de `http://localhost:3000/users?company=5` devolvería '/users')
 - **fullPath**: la ruta pasada (con las querys, por ejemplo de `http://localhost:3000/users?company=5` devolvería '/users?company=5')
+
+## Composition api
+
+Un ejemplo de uso en composition api sería este:
+```vue
+<script setup>
+import { useRouter } from 'vue-router'
+import { ref } from 'vue';
+
+const route = useRouter()
+const searchQuery = ref('')
+const search = () => {
+    if (searchQuery.value.trim() !== ''){
+        // Navegar a la vista de resultados de búsqueda y pasar el texto de búsqueda como parámetro
+        route.push({ path: '/search', query: { q: searchQuery.value } })
+    }
+}
+</script>
+```
 
 ## Ruta no encontrada: 404 Not found
 
