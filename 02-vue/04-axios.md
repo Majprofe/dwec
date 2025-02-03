@@ -34,7 +34,7 @@ npm install axios -S
 
 ## Usar _axios_
 En el componente en que vayamos a usarla la importaremos:
-```vue
+```javascript
 import axios from 'axios'
 ```
 Como es una dependencia incluida en el _package.json_ no se indica su ruta (se buscará en **node-modules**).
@@ -56,7 +56,7 @@ Lo que devuelve es un objeto que tiene, entre otras, las propiedades:
 * ...
 
 La sintaxis de una petición GET a axios usando _async/await_ sería algo como:
-```vue
+```javascript
 try {
   const response = await axios.get(url)
   console.log(response.data)
@@ -66,7 +66,7 @@ try {
 ```
 
 y usando promesas sería algo como:
-```vue
+```javascript
 axios.get(url)
   .then(response => console.log(response.data))
   .catch(response => console.error(response.message))
@@ -88,7 +88,7 @@ Vamos a modificar los diferentes componentes para implementar os cambios requeri
 Modificamos el fichero **TodoList.vue** para añadir en su sección _script_:
 * Antes del objeto vue:
 
-```vue
+```javascript
 import axios from 'axios'
 
 const SERVER = 'http://localhost:3000'
@@ -98,7 +98,7 @@ const SERVER = 'http://localhost:3000'
 
 * Dentro del objeto añadimos el _hook_ **mounted()** para hacer la petición Ajax al montar el componente (recordad que esa función se ejecuta automáticamente cuando se acaba de _renderizar_ el componente):
 
-```vue
+```javascript
 ...
   async mounted() {
     try {
