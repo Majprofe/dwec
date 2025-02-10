@@ -83,3 +83,19 @@ Si pasas a la siguiente fase, te pediremos que hagas una entrevista con nosotros
 - Haremos cambios en el JSON y tendrás que adaptar el código en vivo.
 
 Buena suerte y ¡diviértete programando!
+
+# Rúbricas de Corrección – Desarrollo Full Stack de Bazar
+
+A continuación se presenta la tabla con los criterios de evaluación para la prueba técnica. La puntuación total es de **10 puntos**.
+
+| **Categoría**                           | **Descripción**                                                                                                                                                                                                                                                                                                                         | **Puntos** |
+|----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
+| **1. Búsqueda, Rutas e Integración**   | Se evalúa la implementación de la caja de búsqueda en la página de inicio, la navegación a la página de resultados mediante la query (`/items?search=`) y la ruta de detalle (`/items/:id`). También se verifica que el frontend consuma correctamente la API para mostrar la información de cada producto.                       | **2.5**    |
+| **2. API y Respuesta**                 | Se espera que el servidor (en TypeScript) exponga al menos dos endpoints: `/api/items?q=:query` y `/api/items/:id`. Deben manejar el archivo `products.json` (o su equivalente) para devolver datos de búsqueda y detalle. Se valora el correcto manejo de errores (por ejemplo, producto no encontrado) y la estructura clara del JSON.  | **2**      |
+| **3. Despliegue**                      | La aplicación debe estar desplegada en un servicio de hosting gratuito (Netlify, Vercel, Firebase, etc.). Se comprueba que la URL sea accesible públicamente y que se mencione en el README o Pull Request.                                                                                                                            | **0.5**    |
+| **4. Calidad del Código**              | Se revisa la organización de carpetas y archivos, la legibilidad del código, el uso de TypeScript, la consistencia en la nomenclatura, los principios de DRY (Don’t Repeat Yourself), y el uso de formateadores o linters (ESLint, Prettier). También se valora la separación de responsabilidades y la facilidad de mantenimiento.       | **2**      |
+| **5. Documentación (README)**          | El README debe incluir: instrucciones de instalación, ejecución y despliegue de la aplicación, así como una explicación mínima de la arquitectura o decisiones técnicas (framework elegido, etc.). Se valora la claridad y la información suficiente para que cualquier persona pueda clonar, instalar y ejecutar el proyecto.      | **1**      |
+| **6. Tests**                           | Se requiere al menos **un test**. Puede ser un test unitario, de integración o E2E que valide alguna funcionalidad esencial (por ejemplo, la lógica de búsqueda o la obtención de datos correctos en `/api/items/:id`).                                                                                                                 | **1**      |
+| **7. Carrito**                         | Si se implementa la funcionalidad de carrito de compras (aunque sea de forma básica o simulada), se valora su integración en la UI y las operaciones elementales (agregar un producto, vaciar el carrito, etc.).                                                                                                                      | **1**      |
+
+**Puntuación total: 10 puntos**

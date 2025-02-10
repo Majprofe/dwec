@@ -92,3 +92,5 @@ Buena suerte y ¡diviértete programando!
 | **Tests**                     | Pruebas automatizadas                                 | Implementar al menos un test crítico (por ejemplo, la funcionalidad de agregar/quitar un libro o la persistencia de datos) en la aplicación.         | 1          |
 
 **Puntuación Total: 10 puntos**
+
+
