@@ -23,13 +23,16 @@ La aplicación contará con las siguientes vistas, gestionadas con **Vue Router*
 - **Funcionalidad clave:**  
   - **Botón para cambiar el estado de un libro entre "leído" y "no leído"** sin necesidad de abrir otra vista.  
   - Este cambio se debe reflejar en la API y actualizarse en la vista sin recargar la página.
-  ![alt text](home.png)
+
+<img src="home.png" alt="Vista Home" width="300"/>
 
 ### 2️⃣ 📖 Vista de Detalle  
 - Al hacer clic en un libro en la Vista Home, se mostrará su información completa:
   - **Título, autor, estado, género, año de publicación, sinopsis, portada y reseñas**.
 - Botón **"Volver"** para regresar a la Vista Home.
-  ![alt text](detalle.png)
+
+<img src="detalle.png" alt="Vista Detalle" width="300"/>
+
 
 
 ### 3️⃣ 📝 Vista de Agregar Libro  
@@ -37,7 +40,9 @@ La aplicación contará con las siguientes vistas, gestionadas con **Vue Router*
 - Todos los campos son obligatorios.
 - Tras enviar el formulario, el libro se debe agregar a la API y reflejarse en la Vista Home sin necesidad de recargar la página.
 - Validaciones para evitar el envío de datos incompletos.
-![alt text](formulario.png)
+
+<img src="formulario.png" alt="Vista Formulario" width="300"/>
+
 ---
 
 ## 📌 Marcar un Libro como "Leído" o "No leído"  
@@ -51,10 +56,11 @@ En la **Vista Home**, se debe permitir al usuario cambiar el estado de lectura d
 - Una vez actualizado en la API, la **Vista Home se actualizará automáticamente** sin necesidad de recargar la página.
 
 ### 📌 Ejemplo de Interacción
-| Estado Actual  | Botón Disponible | Nuevo Estado Tras Clic |
-|---------------|----------------|----------------|
-| No leído     | 📖 Marcar como leído | ✅ Leído |
-| Leído        | ❌ Marcar como no leído | 📖 No leído |
+
+| Estado Actual | Botón Disponible       | Nuevo Estado Tras Clic |
+|--------------|----------------------|----------------------|
+| No leído    | 📖 Marcar como leído   | ✅ Leído             |
+| Leído       | ❌ Marcar como no leído | 📖 No leído          |
 
 ---
 
@@ -89,10 +95,3 @@ La prueba se evaluará sobre un total de **10 puntos**, divididos en los siguien
 | **5. Agregar un Nuevo Libro (2 puntos)** | El formulario de agregar un libro funciona correctamente, enviando los datos a la API y reflejando el nuevo libro en la lista. | **2** |
 | **6. Validaciones en el Formulario (1 punto)** | No permite enviar datos incompletos o incorrectos en la creación de un libro. | **1** |
 
-### 🔹 Notas adicionales:
-- **Errores críticos:** Si la aplicación no se conecta correctamente con la API o no carga los libros en la Vista Home, se descontarán puntos según la gravedad del fallo.  
-- **Extras:** Se pueden otorgar puntos adicionales (hasta **1 punto extra**) si la aplicación incluye mejoras en la UI, animaciones o mejor manejo de errores.  
-
----
-
-✅ **Con este enunciado, los desarrolladores tendrán claras las funcionalidades a implementar y cómo serán evaluados. Además, la funcionalidad de cambiar el estado de lectura se ha explicado detalladamente para facilitar su implementación.** 🚀
