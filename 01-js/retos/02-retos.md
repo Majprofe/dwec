@@ -48,7 +48,7 @@ A partir del siguiente código, sustituye las almohadillas (#) por operadores de
       d = false;
       eTexto = '1';
       alert('VERDADERO' + (a+b # 8 && a-b # 1));
-      alert('FALSO: ' + (a+b == 8 # a-b ==-2));
+      alert('FALSO: ' + (a+b == 8 # a-b ==-1));
       alert('VERDADERO: ' + (c # d));
       alert('FALSO: ' + (c # d));
       alert('FALSO: ' + (#a));
