@@ -473,5 +473,5 @@ const modificar = () => {
 
 ## Prácticas propuestas:
 
-1. Ejercicio reyes godos: [Youtube](https://www.youtube.com/watch?v=7f7nNgZOAUc) [Datos](https://html6.es/curso/vue.zip) [Solución](https://github.com/Majprofe/reyesgodos-vue3.git)
-2. Expensive tracker: [Youtube](https://www.youtube.com/watch?v=hNPwdOZ3qFU) [RepoJs](https://github.com/bradtraversy/vanillawebprojects/tree/master/expense-tracker) [Solución](https://github.com/Majprofe/expensive-tracker-vue2)
+1. Ejercicio reyes godos: [Youtube](https://www.youtube.com/watch?v=7f7nNgZOAUc) [Datos](https://html6.es/curso/vue.zip) [Solución](https://github.com/Majprofe/reyesgodos-vue3.git) [Props-Emits](https://www.youtube.com/watch?v=QXNNyV2N_C4)
+3. Expensive tracker: [Youtube](https://www.youtube.com/watch?v=hNPwdOZ3qFU) [RepoJs](https://github.com/bradtraversy/vanillawebprojects/tree/master/expense-tracker) [Solución](https://github.com/Majprofe/expensive-tracker-vue2)
