@@ -1,3 +1,7 @@
+---
+layout: default
+render_with_liquid: false
+---
 # vue-apuntes
 
 ## ¿Qué es Vue?
