@@ -31,7 +31,8 @@ La distribución de los contenidos y las actividades correspondientes es la sigu
 - [Repaso hasta formularios](./01-js/actividades/tema4/04-ejercicios-repaso-hasta-formularios.md)
 - [Repaso examen UD4-5](./01-js/actividades/tema5/05-repaso-examen.md)
 
-
+### Vue:
+- [Blog](./02-vue/ejercicios/blog.md)
 
 ### Pruebas técnicas:
 - [01-reading-list](./02-vue/pruebastecnicas/01-reading-list/README.md)
