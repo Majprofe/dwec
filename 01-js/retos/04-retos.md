@@ -35,8 +35,9 @@ Crea una web que valide los siguientes códigos para control de producto:
 3. 	Un guión.
 4. 	Doce dígitos de cuenta
 5. 	Un guión.
-6. 	Dos dígitos de control: los dos primeros deben ser la suma de los 6 primeros dígitos de la cuenta dividido entre 6 y extrayendo solamente su parte entera; y los dos últimos exactamente igual, pero con los 6 siguientes.
+6. 	Dos dígitos de control: el primer dígito debe ser la suma de los 6 primeros dígitos de la cuenta dividido entre 6 y extrayendo solamente su parte entera; y el último dígito exactamente igual, pero con los 6 siguientes.
 7. 	Si el número está correcto se colocará en un campo de texto al lado del anterior, pero sin guiones: solamente los números y las letras.
+Ejemplo: AA02-123400001200-10 
 
 
 ## 4. `u4e4_localStorage.html`
