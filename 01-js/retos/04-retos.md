@@ -43,7 +43,7 @@ Ejemplo: AA02-123400001200-10
 ## 4. `u4e4_localStorage.html`
 Al formulario que hiciste en el reto u4e2 le falta una pequeña gestión de usuarios registrados diarios para que los de las taquillas lleven el control.
 Para ello deberás incluir en la parte superior derecha de la página dos pequeños contadores:
--	El primero contabiliza el número de forfaits registrados ese día. Para ello guarda ese valor en una cookie que expirará a las 23:59:59 de ese mismo día. Por tanto, cada vez que el formulario sea válido, sumará uno al contador. ¡Cuidado con las fechas!
+-	El primero contabiliza el número de forfaits registrados ese día. Para ello guarda ese valor en el localStore. Por tanto, cada vez que el formulario sea válido, sumará uno al contador. ¡Cuidado con las fechas!
 -	El segundo será similar al primero pero solo contabilizará aquellos socios que son del club de ski.
 Además, cada contador incluirá a su lado un botón «Resetear» que permitirá ponerlo a 0 en cualquier momento. 
 
