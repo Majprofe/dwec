@@ -11,7 +11,7 @@
 
 ### **API endpoint a consumir**
 ```
-https://restcountries.com/v3.1/all
+https://restcountries.com/v3.1/all?fields=name,capital,region,population
 ```
 
 ### **Requisitos**
