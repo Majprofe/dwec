@@ -39,4 +39,4 @@ La distribución de los contenidos y las actividades correspondientes es la sigu
 - [02-bazar-universal](./02-vue/pruebastecnicas/02-bazar-universal/README.md)
 
 ### Examenes:
-- [Examen películas](./02-vue/examenes/peliculas/prueba_tecnica_peliculas.md)
+- [Examen UD4-5 2025](./01-js/examenes/UD4-5/examen_25.md)
