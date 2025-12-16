@@ -40,3 +40,4 @@ La distribución de los contenidos y las actividades correspondientes es la sigu
 
 ### Examenes:
 - [Examen UD4-5 2025](./01-js/examenes/UD4-5/examen_25.md)
+- [Examen recuperación UD4-5 2025](./01-js/examenes/UD4-5/Recuperacion25-26/recuperacion_25.md)
