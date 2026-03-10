@@ -39,5 +39,4 @@ La distribución de los contenidos y las actividades correspondientes es la sigu
 - [02-bazar-universal](./02-vue/pruebastecnicas/02-bazar-universal/README.md)
 
 ### Examenes:
-- [Examen UD4-5 2025](./01-js/examenes/UD4-5/examen_25.md)
-- [Examen recuperación UD4-5 2025](./01-js/examenes/UD4-5/Recuperacion25-26/recuperacion_25.md)
+- [Examen Sin docencia](./02-vue/examenes/recetas/prueba_tecnica_recetas.md)
